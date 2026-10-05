@@ -1,0 +1,23 @@
+== bloombergbusiness: 31 entries
+AI 5027 2026-10-04 15:38:31 https://www.tiktok.com/@bloombergbusiness/video/7692837437743172895 Mishal presses Google SVP James Manyika on AI regulation — after he says tech giants and governments both have a role to play. Listen at bit.ly/4fwjedT or watch
+AI 8096 2026-10-02 20:43:21 https://www.tiktok.com/@bloombergbusiness/video/7692173351816580382 Ed Ludlow has The Rundown on this week’s biggest tech stories, from Paramount Skydance’s deal for Warner Bros. to how AI is reshaping Hollywood. Read more via o
+AI 2596 2026-10-02 19:00:00 https://www.tiktok.com/@bloombergbusiness/video/7692115642291375391 On this episode of the Power On podcast, Mark Gurman explains how Apple could pitch a video-free smart home camera with facial recognition as an alternative to 
+AI 2088 2026-10-02 18:00:00 https://www.tiktok.com/@bloombergbusiness/video/7692113534003580191 Is it safe to say that AI companies are less sensitive to Fed rate changes, making them a good investment during these times of market volatility? Luke Kawa, he
+AI 2301 2026-10-02 17:30:00 https://www.tiktok.com/@bloombergbusiness/video/7692112348131183903 "I don't think it should be left to any one company." Google SVP James Manyika tells Mishal Husain a "collective effort" is needed to ensure AI safety. #AI #tec
+AI 7229 2026-10-02 00:33:33 https://www.tiktok.com/@bloombergbusiness/video/7691862079787060510 The impact AI will have on entertainment, the next phase of the streaming wars and the deals reshaping the industry. Lucas Shaw shares the biggest moments you n
+AI 2655 2026-10-01 21:30:00 https://www.tiktok.com/@bloombergbusiness/video/7691784688599371039 What's one skill kids need in the age of AI? Content Creator & Founder CrunchLabs Mark Rober offered his thoughts to Emily Chang at Bloomberg's Screentime. #AI 
+AI 12900 2026-10-01 15:40:00 https://www.tiktok.com/@bloombergbusiness/video/7691719435467459871 Ken Griffin is donating $3 billion to Carnegie Mellon University, including funding for a new Miami campus, in the largest single gift ever to a US university a
+AI 19500 2026-10-01 04:20:16 https://www.tiktok.com/@bloombergbusiness/video/7691549378162593054 "I feel like this is one of the least-likely domains to be disintermediated by AI." Ben Affleck shares how he thinks artificial intelligence will impact the ent
+AI 65200 2026-09-30 22:30:00 https://www.tiktok.com/@bloombergbusiness/video/7691382053727653151 Pershing Square founder and CEO Bill Ackman tells Bloomberg he is less concerned about Anthropic and OpenAI being the source of an "AI worst-case scenario" than
+AI 134900 2026-09-30 20:30:00 https://www.tiktok.com/@bloombergbusiness/video/7691364726546124062 Citadel CEO Ken Griffin is donating $3 billion to Carnegie Mellon University in the largest single gift committed to a US university. University President Farna
+AI 7456 2026-09-30 19:30:29 https://www.tiktok.com/@bloombergbusiness/video/7691412875348430110 It has been a head-spinning time of change for social media content creators as AI slop proliferates all over the Internet. On this episode of the Odd Lots podc
+AI 3944 2026-09-30 18:33:14 https://www.tiktok.com/@bloombergbusiness/video/7691398119648562463 On today’s Big Take podcast, Bloomberg’s David Papadopoulos and Michael Regan join host Sarah Holder to discuss whether we’re on the brink of a great portfolio 
+AI 14600 2026-09-30 17:30:00 https://www.tiktok.com/@bloombergbusiness/video/7691356522084846879 OpenAI CFO Sarah Friar says the company is optimistic about the returns on its massive AI investments, arguing that the technology’s potential to drive producti
+AI 2891 2026-09-30 15:31:02 https://www.tiktok.com/@bloombergbusiness/video/7691351137915505933 AI models are increasingly more capable of harm, but also capable of a lot of good." Snowflake Computing CEO Sridhar Ramaswamy says he is "optimistic about our 
+AI 6823 2026-09-29 23:29:51 https://www.tiktok.com/@bloombergbusiness/video/7691103490562723102 President Donald Trump shot down the idea of new federal regulations on AI after meeting at the White House with top industry executives amid growing global con
+AI 13600 2026-09-29 22:32:14 https://www.tiktok.com/@bloombergbusiness/video/7691088622963019038 OpenAI’s CEO Sam Altman said the company wants to navigate a period of heightened artificial intelligence safety concerns without the pressure of being a newly 
+Traceback (most recent call last):
+  File "/tmp/ttuser.py", line 11, in <module>
+    ts=e.get('timestamp'); dt=datetime.datetime.fromtimestamp(ts) if ts else None
+       ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

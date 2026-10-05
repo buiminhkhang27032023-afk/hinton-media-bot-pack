@@ -1,0 +1,8 @@
+- Không có template `frame-*` trên box → dựng tay bằng HyperFrames theo motion trong bảng cảnh 9 cảnh (dùng lại generator/CSS job 01, viết cảnh mới).
+- Không dùng mặt/footage/logo CBS: Acemoglu = thẻ hồ sơ silhouette có nhãn "Ảnh minh hoạ"; Clara Shih = thẻ chữ (không ảnh). Biểu đồ thất nghiệp ghi "Minh hoạ · không theo trục số thật". Không thêm trích dẫn ngoài script/research.
+- "B.S." chỉ trên màn hình + thanh bleep; VO "nhảm nhí" giữ nguyên (theo QA bố). SFX bleep (sine 1 kHz 0.28s, nhỏ) đặt ngay sau chữ "nhí", không che lời.
+- Caveat có đủ trên màn: `KỊCH BẢN XẤU NHẤT · NẾU KHÔNG LÀM GÌ`, sticker `CẢNH BÁO ≠ CHẮC CHẮN`, "Theo 60 Minutes (CBS)"; `SỐ LIỆU MỸ` + "VN: chưa có số tương đương"; cảnh 7 không chống công nghệ.
+- SFX one-shot giống job 01 (gain −6 dB, không nhạc nền). Bản không SFX cùng hình: `lam-viec/render/video_vo_only.mp4`.
+- ASR small toàn file chỉ 0.625 vì faster-whisper small dừng/cụt sau ~30s (lỗi ASR, transcript bị cắt ở "Đó là cảnh b…"). Nghe lại bằng faster-whisper **medium** theo 3 cửa sổ dài (0–15.7s, 15.5–31.2s, 31–54s): khớp gần như toàn bộ kịch bản; chỉ khác tên riêng (Darren Asimoglu, Claracy) và số viết thành chữ số. Chỗ duy nhất đáng nghe lại: ~0.6s "đoạt giải" (medium chỉ nghe "đ… giải"). Transcript theo câu: `lam-viec/custom/asr_medium.txt` (clip ngắn không ngữ cảnh nên kém tin cậy hơn).
+- Align: WhisperX gãy timing cả 16 câu (tên Latin) → fallback faster-whisper word timestamps 245/245 từ khớp.
+- JOB.md: giữ "Đang sản xuất" trong lúc render; chuyển "Đang kiểm tra" sau khi deliverables đã nằm trong output/.

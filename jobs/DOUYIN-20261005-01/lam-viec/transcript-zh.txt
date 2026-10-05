@@ -1,0 +1,16 @@
+# transcript-zh — NGUỒN: mô tả công khai Douyin (KHÔNG phải ASR audio)
+# Video: https://www.douyin.com/video/7651637049057814708
+# Chất lượng: thấp — chỉ có tiêu đề + mô tả ngắn; timing ước lượng ~60s cho remake
+# Khi có file mp4: thay bằng Whisper/faster-whisper thật và giữ ID này
+
+[00:00.000 → 00:08.000]
+一分钟了解MCP，AI的万能插座。
+
+[00:08.000 → 00:25.000]
+AI圈高频出现的技术名词，MCP，模型上下文协议。
+
+[00:25.000 → 00:45.000]
+[KHÔNG RÕ — thiếu audio] 口播正文未取得；仅有公开标题与简介。需下载视频后重新转写。
+
+[00:45.000 → 00:60.000]
+标签线索：AI工具测评、AI新星计划、vibecoding、干货知识分享、AI学习。

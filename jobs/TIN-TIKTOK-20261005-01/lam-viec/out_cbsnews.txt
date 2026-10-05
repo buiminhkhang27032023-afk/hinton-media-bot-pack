@@ -1,0 +1,6 @@
+== cbsnews: 1 entries
+Traceback (most recent call last):
+  File "/tmp/ttuser.py", line 11, in <module>
+    ts=e.get('timestamp'); dt=datetime.datetime.fromtimestamp(ts) if ts else None
+       ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

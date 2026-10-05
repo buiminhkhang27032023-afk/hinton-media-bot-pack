@@ -1,0 +1,19 @@
+== cnbc: 46 entries
+AI 2416 2026-10-05 03:00:01 https://www.tiktok.com/@cnbc/video/7693013116421934349 CNBC’s Arjun Kharpal breaks down what Trump’s appointment of Jay Clayton as AI czar means for AI regulation — and what Clayton could do next as he leads a new W
+AI 36300 2026-10-02 20:00:00 https://www.tiktok.com/@cnbc/video/7691788666586287373 China and the U.S. may be competing for dominance in artificial intelligence, but some Chinese manufacturers are eyeing the U.S. data center buildout as an oppo
+AI 8675 2026-10-02 19:03:02 https://www.tiktok.com/@cnbc/video/7692147999937416461 Marissa Mayer, Dazzle AI CEO, joins "The Exchange" to discuss the new personal AI assistant which analyzes your camera roll to act on the world around you. ⠀ Wa
+AI 3570 2026-10-02 14:03:24 https://www.tiktok.com/@cnbc/video/7692070663879789837 Frances Haugen, the former Facebook whistleblower, tells CNBC's "Squawk Box" why she thinks #AI companies are taking safety concerns more seriously than social 
+AI 2453 2026-10-02 12:18:08 https://www.tiktok.com/@cnbc/video/7692043529320746253 Marco Zappacosta, Thumbtack CEO and co-founder, joined "Squawk Box" to discuss why Gen Z is interested in learning skilled #tradesin an age of #AI. ⠀ Watch more
+AI 18000 2026-10-01 22:45:08 https://www.tiktok.com/@cnbc/video/7691834177661979917 Navrina Singh, Credo AI founder and CEO, talks at the #CNBCAI Forum on Thursday about the dangers of rogue, autonomous AI agents.
+AI 32800 2026-10-01 22:30:09 https://www.tiktok.com/@cnbc/video/7691830316758994190 Kyle Bass, Rochefort Asset Management founder and co-CEO, told Scott Wapner he doesn’t trust AI companies to police themselves during the #CNBCAI Forum on Thurs
+AI 2443 2026-10-01 22:15:10 https://www.tiktok.com/@cnbc/video/7691826475309255950 John Arnold, Arnold Ventures co-founder and co-chair, shares his thoughts on how AI will affect the cost of energy bills for consumers at the #CNBCAI Forum on T
+AI 12400 2026-10-01 21:46:53 https://www.tiktok.com/@cnbc/video/7691819106596687118 "China wants us to slow down," Kyle Bass, Rochefort Asset Management founder and co-CEO, told Scott Wapner at the #CNBCAI Forum when discussing the calls to slo
+AI 51600 2026-10-01 21:30:09 https://www.tiktok.com/@cnbc/video/7691814839236168973 "We were doing 45 billion tokens a day on average," Andy Markus, AT&T chief data and AI officer, told Scott Wapner at the #CNBCAI Forum when explaining how the 
+AI 2957 2026-10-01 21:03:11 https://www.tiktok.com/@cnbc/video/7691807848736591117 Bret Taylor, Sierra co–founder and OpenAI chairman, talks at the #CNBCAI Forum on Thursday about the importance of AI safety saying, “We need to win on the alig
+AI 6048 2026-10-01 20:16:12 https://www.tiktok.com/@cnbc/video/7691795749465525517 "We really believe that most companies front doors will be an AI agent," Bret Taylor, Sierra co–founder and OpenAI chairman, explained when asked about Sierra's
+AI 11700 2026-10-01 17:27:08 https://www.tiktok.com/@cnbc/video/7691752130524368141 #Alphabet launched #Gemini 4 Argon on Wednesday to select cyber partners, renewing pressure to build a mass-market agent. ⠀ CNBC’s MacKenzie Sigalos has the lat
+Traceback (most recent call last):
+  File "/tmp/ttuser.py", line 11, in <module>
+    ts=e.get('timestamp'); dt=datetime.datetime.fromtimestamp(ts) if ts else None
+       ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

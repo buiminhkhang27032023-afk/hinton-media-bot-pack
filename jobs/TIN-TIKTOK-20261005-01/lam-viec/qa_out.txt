@@ -1,0 +1,72 @@
+# QA report — TIN-TIKTOK-20261005-01 (v3) · Bot 2 — Tin AI
+
+- **Voice:** OmniVoice · male clone v2 locked · 1.2 · voice_locked:true
+  - /health: status=ok voice_mode=clone voice_locked=True ref=`voice-lock-vn-v2.wav` speed=1.2 (post) seed=1234
+  - 19/19 câu TTS qua `/tts` với header `X-Voice-Locked: true` + `X-Voice-Clone: voice-lock-vn-v2.wav` (log: qa/pipeline.log); loudnorm 2-pass −14 LUFS/TP −1.5
+- **Engine:** HyperFrames 0.8.114 (headless Chrome, GSAP) — composition tay theo bảng cảnh 11 shot (`lam-viec/hf/index.html`, generator `lam-viec/custom/gen_hf.py` + `style.css`), F01 neon UI; FFmpeg chỉ dùng mux/720p.
+- **Render lock:** TTS và render đều chạy trong `flock /workspace/video-jobs/.render.lock`.
+- **VO text:** đúng nguyên văn `lam-viec/storytelling_script.txt` (bản QA v3, có sửa "tưởng thật"); 252 âm tiết, 19 câu.
+
+## File
+| File | Thông số |
+|---|---|
+| output/storytelling_final.mp4 | h264 1080x1920 30/1 yuv420p High · aac 48000Hz ch=2 54.161s · 54.167s · 17.58 MB (18432323 B) · -14.7 LUFS / TP -4.3 dBFS |
+| output/storytelling_mobile_720p.mp4 | h264 720x1280 30/1 yuv420p High · aac 48000Hz ch=2 54.161s · 54.167s · 5.5 MB |
+| output/voice_storytelling.wav | VO-only, 53.711s, -14.7 LUFS / TP -1.5 dBFS, 48 kHz mono |
+| output/subtitle.srt | 45 cue, 0.00–53.56s |
+| output/storytelling_script.txt, output/script.md | VO duyệt + script v3 kèm bảng cảnh |
+
+## Self-QA
+- ffprobe: 1080×1920 ✓ · 720×1280 ✓ · H.264 yuv420p + AAC ✓ · video 54.167s = VO 53.71s + 0.45s đuôi.
+- SRT: thứ tự/thời gian không chồng lấn = True; chữ SRT trùng 100% VO = True; cue cuối kết thúc 53.56s vs VO 53.71s; 19/19 đầu câu khớp đầu cue (±0.25s). Align WhisperX: 252 từ, 1 nội suy, 251 lấy từ faster-whisper fallback.
+- Nghe lại (faster-whisper small int8, ASR proxy): độ giống kịch bản **0.783**. Khác biệt ASR (phần lớn là cách nghe tên riêng/tiếng Anh, không phải đọc sai):
+  - replace: "một trăm đô la một" → "100 1"
+  - replace: "một" → "1"
+  - replace: "tiktok" → "tích tốc"
+  - replace: "trăm nghìn" → "100000"
+  - replace: "janie" → "jenny"
+  - replace: "moore" → "mo"
+  - replace: "quỹ a mười sáu dét" → "quý a16d"
+  - replace: "chatgpt" → "chắc gpt"
+  - replace: "moore" → "mô"
+  - replace: "janie vào rushtok trào" → "jenny và rustop chào"
+  - replace: "mùa" → "1"
+  - replace: "một trăm đô" → "100 do"
+  - replace: "hai" → "2"
+  - replace: "một trăm hai mươi nghìn" → "120000"
+  - replace: "ba" → "3"
+  - replace: "tiktok" → "tích tốc"
+  - replace: "nhãn" → "nhán"
+  - replace: "tám" → "8"
+  - replace: "hai mươi" → "20"
+  - replace: "mới" → "mở"
+  - replace: "mười sáu" → "16"
+  - replace: "tư" → "4"
+  - replace: "hai lăm" → "25"
+  - replace: "moore" → "mo"
+  - replace: "a mười sáu dét" → "a16d"
+  - replace: "tám" → "8"
+  - replace: "ba" → "3"
+  - replace: "mười" → "10"
+  - replace: "shop" → "sóc"
+  - replace: "giả" → "già"
+- Không BGM: track audio = VO + 67 SFX one-shot ngắn (≤0.9s, theo cột "Âm thanh" của bảng cảnh: {'hit': 8, 'scan': 3, 'whoosh': 13, 'click': 10, 'pop': 33}), gain −6 dB, không có nhạc nền. Khoảng lặng giữa câu trong VO-only: mean -91.0…-91.0 dB.
+- Không burn karaoke/caption (chỉ chữ khoá kinetic theo bảng cảnh); SRT sidecar.
+- Khung hình: qa/contact_sheet.jpg (11 cảnh, 70% mỗi cảnh) + qa/frames/; chữ nằm trong vùng an toàn x 60–940, y 150–1590 (SO-TAY-DUNG §3.1).
+- Hiệu ứng đã dựng: glitch RGB-split + stamp `AI?` + counter 0→120K+ + zoom punch/shake (S1); kinetic typewriter `JANIE B` + profile slide/blur-in + lower-third wipe (S2); typewriter prompt + progress bar + feed cuộn/freeze #RushTok (S3); listicle 01–04 pop-in; timeline 7 ngày + punch `$100` (S4); counter 0→120.000+ + particle + punch (S5); lưới 4×5 stamp 8/20→16/20 + nháy viền 4 ô (S6); split <25 tuổi vs lớn tuổi + GENERATED shake + bubble/tim (S7); 2 thẻ nguồn flip-in + marker vàng (S8); kinetic gạch `THẬT HAY GIẢ?` → `CÓ ĐÁNG XEM?` + VS AI $100 punch (S9); toggle nhãn AI ON + viền cảnh báo nháy 2 lần (S10); câu hỏi từng từ + logo scale-in + Follow pulse (S11). Flash/zoom chuyển cảnh mỗi cảnh; progress bar trên cùng.
+- Cảnh (s): [(0.0, 4.75), (4.75, 8.78), (8.78, 13.59), (13.59, 17.27), (17.27, 20.11), (20.11, 25.31), (25.31, 33.44), (33.44, 38.08), (38.08, 45.32), (45.32, 49.96), (49.96, 54.16)]
+
+## Ghi chú / lệch spec
+- Không có template `frame-*` trên box → dựng tay bằng HyperFrames theo đúng motion trong bảng cảnh (tên template chỉ là gợi ý).
+- Nhân vật Janie = minh hoạ SVG (silhouette), không dùng mặt người thật, không deepfake. Bình luận ở S7 là bubble giả lập (không có chữ) → không bịa trích dẫn.
+- SFX: có (theo bảng cảnh). Bản không SFX cùng hình: `lam-viec/render/video_vo_only.mp4` nếu bố/anh muốn VO-only.
+- Không dùng presenter PIP (F01 không lộ mặt).
+- Nghe kiểm tra lại bằng faster-whisper **medium** trên từng câu nghi ngờ (lam-viec/custom/clips/): câu 18 nghe đủ "Còn bạn, bạn đã…" (small bỏ sót 1 chữ "bạn" là lỗi ASR). Hai chỗ cả small lẫn medium đều nghe khác → **bố nghe lại giúp**: ~12.3s "video **mùa** tuyển" (ASR nghe "một"), ~45.5s "**đăng** nội dung AI" (ASR nghe "đang"). OmniVoice khoá seed 1234 nên TTS lại cùng câu sẽ ra y hệt; muốn sửa phải đổi chữ VO (cần bố duyệt).
+- Align: WhisperX (wav2vec2-VI) gãy timing ở cả 19 câu (nhiều tên Latin) → pipeline tự fallback faster-whisper word timestamps (251/252 từ khớp, 1 từ nội suy); SRT + mốc hiệu ứng dùng timing này.
+- Tải máy: lúc TTS có tiến trình ffmpeg của job khác (`/workspace/jobs/trial02`, không qua render lock) chiếm ~6 core → TTS chậm (~21 phút cho 53.7s audio).
+
+## Bàn giao
+```
+TIN-TIKTOK-20261005-01|Đang kiểm tra|v3|/workspace/video-jobs/TIN-TIKTOK-20261005-01/output|next=bố
+```
+

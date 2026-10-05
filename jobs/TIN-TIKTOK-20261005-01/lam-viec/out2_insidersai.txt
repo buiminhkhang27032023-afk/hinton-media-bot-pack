@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/ttuser.py", line 8, in <module>
+    ents=d.get('entries') or []
+         ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

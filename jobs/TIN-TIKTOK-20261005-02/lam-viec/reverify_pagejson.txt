@@ -1,0 +1,5 @@
+URL: https://www.tiktok.com/@60minutes/video/7692974037072416014 | checked 2026-10-05 10:29 UTC+7 | status 0
+ stats: {'diggCount': 23900, 'shareCount': 772, 'commentCount': 473, 'playCount': 352200, 'collectCount': '2822'} | duration 88
+ created: 2026-10-05T00:28:39 UTC+7
+ desc: “What you just described is B.S.,” says Daron Acemoglu, Nobel Prize-winning professor at MIT, pushing back on the idea that training AI models will create a huge new sector of work. “The number of people they're employing in these positions is small relative to the number of people who will be replaced,” says Acemoglu. “That's the whole point of automation.” Acemoglu fears that we could see unemployment triple in the next decade if we do nothing and continue on our current course. #ai #futureofwork #economy 
+checked 2026-10-05 10:29:27 UTC+7

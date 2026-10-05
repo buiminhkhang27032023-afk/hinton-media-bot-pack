@@ -1,0 +1,14 @@
+== reuters: 46 entries
+AI 1755 2026-10-05 06:45:11 https://www.tiktok.com/@reuters/video/7693070971028213005 Globally, cumulative spending on data centers could top $30 trillion by 2050, according to a central scenario modeled by Oxford Economics and PwC. That 'dwarfs'
+   2900000 2026-10-02 07:15:08 https://www.tiktok.com/@reuters/video/7691965408592530701 A passenger on board a flydubai flight from Dubai to Tel Aviv captured the moment it landed safely in Saudi Arabia after an ordeal of what Israeli officials sai
+   2700000 2026-10-01 16:34:52 https://www.tiktok.com/@reuters/video/7691738725310631181 A passenger who helped save a flight carrying more than 170 people to Tel Aviv from crashing says he knew how to stabilize the ‌aircraft after watching an aircr
+AI 67000 2026-10-01 08:16:04 https://www.tiktok.com/@reuters/video/7691609894155193613 US defense chief Pete Hegseth tapped trillionaire DOGE architect Elon Musk to help lead a new Pentagon effort focused on the future of warfare. ⠀ #hegseth #elon
+AI 12700 2026-09-29 21:25:55 https://www.tiktok.com/@reuters/video/7691071570152033550 Protesters gathered outside OpenAI's annual DevDay conference in San Francisco, urging the company to cut military ties, limit government use of its technology 
+AI 6318 2026-09-29 13:10:00 https://www.tiktok.com/@reuters/video/7690943674464652557 A San Francisco-based robotics company is betting that humanoid robots can succeed where automation has previously struggled: navigating the cluttered, unpredic
+AI 5061 2026-09-29 12:42:45 https://www.tiktok.com/@reuters/video/7690936771856567566 Chinese-powered AI agents have learnt to deceive, circumvent restrictions and conceal failure, showing the kind of traits in autonomous artificial intelligence 
+AI 473400 2026-09-29 10:46:49 https://www.tiktok.com/@reuters/video/7690906796042521870 McDonald’s is using artificial intelligence to help set menu prices across the US and some global markets, a plan that aims to boost profit but risks alienating
+Traceback (most recent call last):
+  File "/tmp/ttuser.py", line 11, in <module>
+    ts=e.get('timestamp'); dt=datetime.datetime.fromtimestamp(ts) if ts else None
+       ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

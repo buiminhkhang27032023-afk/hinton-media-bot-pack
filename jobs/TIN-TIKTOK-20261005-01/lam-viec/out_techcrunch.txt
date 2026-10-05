@@ -1,0 +1,7 @@
+== techcrunch: 59 entries
+AI 220 2026-09-28 16:40:31 https://www.tiktok.com/@techcrunch/video/7690626803492343053 When @synthesia_ai asked TechCrunch reporter @dominicmadori if she wanted to make a digital twin, she didn’t hesitate.   The AI video company created two versio
+Traceback (most recent call last):
+  File "/tmp/ttuser.py", line 11, in <module>
+    ts=e.get('timestamp'); dt=datetime.datetime.fromtimestamp(ts) if ts else None
+       ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'

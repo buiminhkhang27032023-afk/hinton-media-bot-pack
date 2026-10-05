@@ -1,0 +1,16 @@
+== nbcnews: 31 entries
+   4200000 2026-10-04 15:35:00 https://www.tiktok.com/@nbcnews/video/7692825794040597773 A United States Marine is being held in Japan, accused of murder. Local police say 20-year-old Lance Corporal Devin Jacob Ballard brought a woman to a hotel bef
+   3400000 2026-10-04 15:05:00 https://www.tiktok.com/@nbcnews/video/7692824593060482317 Video shows a dramatic confrontation with Gillio Lopes, one of the men accused in the Cornell sexual assault case.
+   1500000 2026-10-03 13:54:14 https://www.tiktok.com/@nbcnews/video/7692439446116977933 Christa Pike, the woman who survived an execution attempt in Tennessee earlier this week, remains hospitalized in critical condition, her lawyers said in a new 
+   2000000 2026-10-03 13:21:11 https://www.tiktok.com/@nbcnews/video/7692430820031728910 The Wall Street Journal reports the co-pilot who tried to fly a plane bound for Israel into the ground had been banned from flying by his home country, Oman, ov
+Traceback (most recent call last):
+  File "/tmp/ttuser.py", line 11, in <module>
+    ts=e.get('timestamp'); dt=datetime.datetime.fromtimestamp(ts) if ts else None
+       ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+y a string” following re
+Traceback (most recent call last):
+  File "/tmp/ttuser.py", line 11, in <module>
+    ts=e.get('timestamp'); dt=datetime.datetime.fromtimestamp(ts) if ts else None
+       ^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
